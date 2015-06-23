@@ -1,0 +1,4 @@
+name = Forestethics module
+description = "Redirects Campaign Buttons, Documents and Actions to their URLS/Related Nodes"
+core = 7.x
+version = "7.x-0.1"

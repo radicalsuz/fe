@@ -1,0 +1,58 @@
+name = Forest Ethics
+description = A theme about nice things
+package = Core
+version = VERSION
+core = 7.x
+
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/lightbox.js
+scripts[] = js/jquery-ui-1.8.17.tabs.min.js
+scripts[] = js/jquery.validate.js
+scripts[] = js/forestethics.js
+scripts[] = js/staff.js
+scripts[] = js/jquery.hoverIntent.minified.js
+scripts[] = js/jquery.cookie.js
+
+regions[top_menu] = Top Menu
+regions[top_menu2] = Top Menu Position Two
+regions[top_menu3] = Top Menu Position Three
+regions[top_menu4] = Top Menu Position Four
+regions[full_width_above_content] = Full Width Above Content and Sidebar
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[issue_sidebar] = Issue Sidebar
+regions[lp_sidebar] = Landing Page Sidebar
+regions[blog_sidebar] = Blog Sidebar
+
+; media/pressrooms
+regions[press_sidebar] = Press room sidebar
+regions[press_room] = Press Room
+regions[media_room] = Media Room
+
+; front page regions
+regions[slideshow] = Homepage Slideshow 
+regions[take_action] = Homepage Take Action
+regions[explore] = Homepage Explore Stories
+regions[front_news] = Homepage Front News
+regions[front_right] = Homepage Front Right
+
+regions[staff_pictures] = Staff Pictures
+regions[badges] = Badges
+regions[page_bottom] = Page bottom
+
+; new landing page regions
+regions[campaign_land_hero] =  Campaign Landing Pages Full Width Hero Area
+regions[campaign_land_sidebar] = Sidebar for the new landing pages
+
+
+settings[shortcut_module_link] = 0
+
+; Information added by drupal.org packaging script on 2011-07-28
+version = "7.7"
+project = "drupal"
+datestamp = "1311813879"
+

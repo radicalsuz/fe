@@ -1,0 +1,414 @@
+/* ----- Field Structure ----- */
+
+form ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+* html form ul{ /* IE6 Margin Percent Bug for Halves/Thirds */
+	width:99%;
+	zoom:1;
+}
+form li{
+	margin:0;
+	padding:0px 1% 5px 1%;
+	clear:both;
+	background-color:transparent;
+	position:relative; /* Makes Instructs z-index stay on top in IE. */
+	-webkit-transition: background-color 350ms ease-out;
+	   -moz-transition: background-color 350ms ease-out;
+	     -o-transition: background-color 350ms ease-out;
+	        transition: background-color 350ms ease-out;
+}
+form ul:after,form li:after, form li div:after{
+	content:"."; 
+	display:block;
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+* html form li{height: 1%;margin-bottom:-3px;}
+*+html form li{height: 1%;margin-bottom:-3px;}
+* html form li div{display:inline-block;}
+*+html form ul, *+html form li div{display:inline-block;}
+
+form li div{
+	margin:0;
+	padding:0;
+	color:#000;
+}
+form li span{
+	margin:0 .3em 0 0;
+	padding:0;
+	float:left;
+	color:#000;
+}
+
+/* ----- Choices Field Structures ----- */
+
+form li div span{
+	margin:0;
+	display:block;
+	width:100%;
+	float:left;
+}
+li.twoColumns div span{
+	width:48%;
+	margin:0 5px 0 0;
+}
+li.threeColumns div span{
+	width:30%;
+	margin:0 5px 0 0;
+}
+li.notStacked div span{
+	width:auto;
+	margin:0 7px 0 0;
+}
+
+/* ----- Location Field Structures ----- */
+
+form li.complex{
+	padding-bottom:0;
+}
+form li.complex div span{
+	width:auto;
+	margin:0 .3em 0 0;
+	padding-bottom:5px;
+}
+form li.complex div span.full{
+	margin:0;
+	padding-bottom:5px;
+}
+form li.complex div span.field-left, 
+form li.complex div span.field-right{
+	margin:0;
+	width:48%;
+}
+form li.complex div span.full input, 
+form li.complex div span.full select, 
+form li.complex div span.field-left input, 
+form li.complex div span.field-right input,
+form li.complex div span.field-left select,
+form li.complex div span.field-right select{
+	width:100%;
+	font-size: 10px;
+}
+
+/* ----- FLOATS ----- */
+
+.field-left{
+	float:left;
+}
+#form-box .field-right{
+	float:right;
+}
+.clear{
+	clear:both !important;
+}
+
+label span, .section span, p span, .likert span{
+	display:inline !important;
+	float:none !important;
+}
+
+
+/* ----- LABELS ----- */
+
+form li div label, form li span label{
+	margin:0;
+	padding-top:3px;
+	clear:both;
+	font-size:85%;
+	line-height:160%;
+	color:#000;
+	display:none;
+}
+label.desc{
+	font-size:95%;
+	font-weight:bold;
+	color:#222;
+	line-height:150%;
+	margin:0;
+	padding:0 0 3px 0;
+	border:none;
+	display:block;
+}
+
+form.rightLabel label.desc{
+	padding-top:2px;
+}
+
+span.symbol{
+	font-size:120%;
+	line-height:135%;
+}
+form li .datepicker{
+	float:left;
+	margin:.19em 5px 0 0;
+	padding:0;
+	width: 16px;
+	height: 16px;
+	cursor:pointer !important;
+}
+
+/* ----- REQUIRED ----- */
+
+form span.req{
+	display:inline;
+	float:none;
+	color:red !important;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+/* ----- FIELDS ----- */
+
+input.text, input.search, input.file, select.select{
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	color:#000;
+	margin:0;
+	padding:2px;
+}
+input.text, input.search, textarea.focus{
+	border-top:1px solid #7c7c7c;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-bottom:1px solid #ddd;
+	background:#fff url(../images/fieldbg.gif) repeat-x top;
+}
+select.select{
+	padding:1px 0 0 0;
+}
+input.search{
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	padding-left:6px;
+}
+input.checkbox, input.radio{
+	display:block;
+	margin:4px 0 0 0;
+	padding:0;
+	width:13px;
+	height:13px;
+}
+input.other{
+	margin:0 0 8px 25px;
+}
+
+.safari select.select{
+	font-size:120% !important;
+	margin:0 0 1px 0;
+}
+* html select.select{
+	margin:1px 0;
+}
+*+html select.select{
+	margin:1px 0;
+}
+
+.center, 
+form li span.center input.text, form li span.center label,
+form li.name span label,
+form li.date input.text, form li.date span label, 
+form li.phone input.text, form li.phone span label,
+form li.time input.text, form li.time span label{
+	text-align:center;
+}
+form li.time select.select{
+	margin-left:5px;
+}
+form li.price .right{
+	text-align:right;
+}
+
+/* ----- SIZES ----- */
+
+.third{
+	width:32% !important;
+}
+.half{
+	width:48% !important;
+}
+.full{
+	width:100% !important;
+}
+
+input.small, select.small{
+	width:25%;
+}
+input.medium, select.medium{
+	width:50%;
+}
+input.large, select.large{
+	width:100%;
+}
+
+
+/*.msie6 select.ieSelectFix{
+	width:100%;
+}*/
+.msie[class] select.ieSelectFix{
+	width:auto;
+}
+.msie[class] select.ieSelectFix.small{
+	min-width:25%;
+}
+.msie[class] select.ieSelectFix.medium{
+	min-width:50%;
+}
+.msie[class] select.ieSelectFix.large{
+	width:100%;
+}
+
+textarea.textarea{
+	min-width:100%; /* IE8 Textarea Scroll Bug */
+	width:194px;
+	font-size: 12px;
+	height: 154px;	
+	resize: none;
+	overflow-y:visible;
+        font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+}
+
+textarea.blur{
+	background: none;
+	border: 1px solid transparent;
+        background: #FFFFFF;
+}
+
+#add-your-own{
+  bottom: 20px;
+  color: #DF0000;
+  left: 3px;
+  position: absolute;
+}
+
+/* ----- FILES ----- */
+
+li.file a{
+	color:#222;text-decoration:none;
+}
+li.file span{
+	display:inline;float:none;
+}
+li.file img{
+	display:block;float:left;margin:0 0 0 -10px;padding:5px 5px 7px 5px;
+}
+li.file .file-size, li.file .file-type{
+	color:#666;font-size:85%;text-transform: uppercase;
+}
+li.file .file-name{
+	display:block;
+	padding:14px 0 0 0;
+	color:blue;
+	text-decoration:underline;
+}
+li.file .file-delete{
+	color:red !important;font-size:85%;text-decoration:underline;
+}
+li.file a:hover .file-name{
+	color:green !important;
+}
+li.file a:hover .file-name{
+	color:green !important;
+}
+
+/* ----- LABEL LAYOUT ----- */
+
+.leftLabel li, .rightLabel li{
+	width:74% !important;
+	padding-top:9px;
+}
+.leftLabel label.desc, .rightLabel label.desc{
+	float:left;
+	width:31%;
+	margin:0 15px 0 0;
+}
+.rightLabel label.desc{
+	text-align:right;
+}
+.leftLabel li div, .rightLabel li div{
+	float:left;
+	width:65%;
+}
+.leftLabel .buttons, .rightLabel .buttons{
+	padding-left:23%;
+}
+.leftLabel .buttons div, .rightLabel .buttons div{
+	float:none;
+	margin:0 0 0 20px;
+}
+
+
+.leftLabel p.instruct, .rightLabel p.instruct{
+	width:28%;
+	margin-left:5px;
+}
+.leftLabel .altInstruct .instruct, .rightLabel .altInstruct .instruct{
+	margin-left:31% !important;
+	padding-left:15px;
+	width:65%;
+}
+
+/* ----- NO INSTRUCTIONS ----- */
+
+.noI form li, .altInstruct form li{
+	width:auto !important;
+}
+
+/* ----- NO INSTRUCTIONS LABEL LAYOUT ----- */
+
+.noI .leftLabel .buttons, .noI .rightLabel .buttons{
+	padding-left:31%;
+}
+.noI .leftLabel .buttons div, .noI .rightLabel .buttons div{
+	margin:0 0 0 17px;
+}
+
+
+
+/* ----- ERRORS ----- */
+
+form li.error{
+	display:block !important;
+	background-color: #FFDFDF !important;
+	margin-bottom:3px !important;
+}
+form li label.error, form li input.error{
+	color:#DF0000 !important;
+	font-weight:bold !important;
+}
+form li input.error{
+	background:#fff !important;
+	border:1px solid #DF0000 !important;
+}
+
+
+form li.error label, form li.error span.symbol{
+	color:#000 !important;
+}
+form li.error label.desc{
+	color:#DF0000 !important;
+}
+form p.error{
+	display:none;
+	margin:0 !important;
+	padding:7px 0 0 0 !important;
+	line-height:10px !important;
+	font-weight:bold;
+	font-size:11px;
+	color:#DF0000 !important;
+	clear:both;
+}
+form li.error p.error{
+	display:block;
+}
+form li.complex p.error{
+	padding:0 0 9px 0 !important;
+}
+
+.addr, .email{width:100%;}
+
+.error-container{display:none;color: #DF0000;font-weight: bold;}

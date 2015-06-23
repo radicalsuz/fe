@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SOS: Save Our Shore</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width"> 
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="js/picturefill-master/external/matchmedia.js"></script>
+  <script src="js/picturefill-master/picturefill.js"></script>
+  <script type="text/javascript" src="js/jquery.scrolling-parallax.js"></script>
+  <script type="text/javascript" src="js/sos.js"></script>
+  <!-- Tartrekmap dependencies: -->
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+  <link href='http://dev.tankertracker.affinitybridge.com/tartrekmap.min.css' rel='stylesheet' />
+  <!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' />
+    <link href='tartrekmap.ie.min.css' rel='stylesheet' />
+  <![endif]-->
+
+  <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"></script>
+
+  <!-- Tartrekmap script: -->
+  <script src="http://dev.tankertracker.affinitybridge.com/tartrekmap.min.js"></script>
+  
+</head>
+<body class="inner">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=367496393380142";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="compass-full" class="compass">
+  <img id="compass-img" src="images/compass1.png" />
+  <a href="#header" class="compass-btn" id="home"><img class="image-swap" src="images/home_off.png" /></a>
+  <a href="#" class="compass-btn" id="ask"> <img class="image-swap" src="images/ask_off.png" /></a>
+  <a href="#" class="compass-btn" id="action"><img class="image-swap" src="images/action_off.png" /></a>
+  <a href="#" class="compass-btn" id="share"><img class="image-swap" src="images/share_off.png" /></a>
+</div>
+<div id="compass-bottom" class="compass">
+  <a href="#header"><img src="images/compass/compass-1.1.png" /></a>
+  <a href=""><img src="images/compass/compass-2.1.png" /></a>
+  <a href=""><img src="images/compass/compass-3.1.png" /></a>
+  <a href=""><img src="images/compass/compass-4.1.png" /></a>
+</div>
+
+<div id="container">
+  <div id="header">
+    <div id="header-left">
+      <h1>SOS: Save Our Shore</h1>
+      <h2>Keep Our West Coast Tar Sands Free</h2>
+      <h3>By <strong>Forest</strong>Ethics</h3>
+    </div> <!-- /header-left -->
+    <div id="header-right">
+      <div id="share-buttons">        
+        <div class="fb-like" data-href="http://radicaldesigns.org" data-width="200" data-layout="button_count" data-show-faces="false" data-send="true"></div>
+        <div id="twitter">
+<!--           <a href="">
+            <img src="images/twitter.png" />
+          </a>
+-->          
+          <div id="latest-tweet"><div id="tweet-text">RT <a href="/JimAceman" class="twitter-atreply pretty-link" dir="ltr"><s>@</s><b>jimaceman</b></a>: Join <a href="/USGBC" class="twitter-atreply pretty-link" dir="ltr"><s>@</s><b>USGBC</b></a> on Twitter to tell Senators to support Federal use of LEED for green buildings <a href="/search?q=%23LEEDworks&amp;src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s><b>LEEDworks</b></a></div></div>
+        </div>
+      </div>
+      <div id="action-buttons">
+        <a href="" id="action-alerts">text alerts</a>
+        <a href="" style="background:#a3d6e8;">learn more</a>
+        <a href="" style="background:#b2cbd4;">blog</a>
+      </div>
+
+    <div class="clear"></div>
+
+    </div> <!-- /header-right -->
+        <div id="header-drawer"><span>menu <strong>&darr;</strong></span></div>    
+    <div class="clear"></div>
+  </div> <!-- /header -->
+  <div id="learn_more" class="sos-flex-single">
+    <div class="header-ribbon">
+      <span>Learn More: The Truth About Tar Sands</span>   
+    </div>
+    <div class="three-col first">
+      <div class="col-header">
+        <img src="images/tanker_icon.png"/>
+        <span>Tar Sands Tankers Spell Trouble</span>
+      </div>
+      <div class="learn-more-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur pulvinar elit id feugiat. Aliquam ante orci, consequat vel est nec, aliquam condimentum mauris. Aenean malesuada malesuada est, aliquam fringilla mi semper eget. Praesent facilisis enim vel turpis iaculis, at sodales magna iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales purus sollicitudin ultrices auctor. Duis luctus felis ac nisl laoreet hendrerit at eu turpis. Aliquam hendrerit ultrices dapibus.</p>
+        <p>Quisque et dolor tristique urna iaculis consequat ut et turpis. Cras in ligula risus. Etiam euismod convallis aliquet. Vestibulum convallis felis quam, id mollis urna sagittis in. Cras arcu purus, blandit et lorem vehicula, accumsan dignissim turpis. Pellentesque id consequat ipsum. Nulla eget metus elementum nulla egestas facilisis eu vitae libero. In mattis tincidunt massa quis elementum. Curabitur eget venenatis purus. In arcu elit, tincidunt a vehicula in, cursus non augue. Nunc sit amet lorem dolor.</p>
+        <p>Sed non ipsum arcu. Proin imperdiet lectus ac libero tempus scelerisque. Sed adipiscing sem eu mauris commodo laoreet. Cras placerat mi sit amet lorem sollicitudin, eget ornare velit pharetra. Integer convallis est in vestibulum iaculis. Morbi nisi mi, ornare vel auctor a, laoreet eu mi. Pellentesque auctor massa id velit volutpat faucibus.</p>
+        <p>Quisque mattis lacus magna, eget tempus nunc malesuada vel. Morbi ante nisi, congue id mi in, malesuada blandit justo. Morbi et odio neque. Morbi euismod egestas tristique. Suspendisse iaculis orci ligula, sed interdum nibh aliquet id. Cras adipiscing pellentesque nisi, eget congue sapien hendrerit quis. Phasellus tempor, odio vel luctus commodo, nulla nulla viverra lorem, nec condimentum risus nulla ut eros. Ut aliquam ante nisl, at facilisis velit eleifend at. Suspendisse porttitor laoreet elit id egestas. Cras ut lacus eu nisl sollicitudin faucibus non at urna. Praesent et ipsum volutpat, aliquet nisl sit amet, mollis nisl. Proin a neque quam. Cras non orci enim. Aliquam tellus quam, dictum nec porttitor in, rutrum eu nulla.</p>
+        <p>Morbi eget urna ut nibh tincidunt laoreet in ac elit. Sed a nunc rhoncus, lacinia erat id, mollis libero. Proin a volutpat mauris. Aenean sed nulla auctor, bibendum libero sed, molestie dolor. Morbi at rutrum lectus, non semper risus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vestibulum scelerisque commodo. Donec condimentum convallis ipsum ut lobortis. Curabitur elementum nibh ut bibendum vehicula. In consequat viverra orci, blandit lacinia purus ullamcorper sit amet. Donec blandit faucibus mi, sed facilisis dolor vulputate nec. Ut fringilla at odio varius faucibus. Proin mattis urna lectus, in tempus nulla sollicitudin ac.</p>
+        <p>Nulla vitae molestie lorem, sed pellentesque velit. Etiam sed nisi mauris. Pellentesque tincidunt lectus sed lorem lacinia pellentesque. Pellentesque elementum urna at semper tempor. Aliquam eu massa diam. Nulla facilisi. Mauris et ultrices nisl.</p>
+        <p>Curabitur luctus ligula non diam consectetur accumsan. Etiam eget sapien vel eros posuere dapibus a in massa. Pellentesque mi lorem, faucibus sit amet eros in, sagittis suscipit arcu. Curabitur imperdiet tellus consectetur dui congue, ac egestas leo condimentum. Nam ut elementum augue. Duis pulvinar tortor tristique lorem consectetur. </p>
+      </div>
+    </div>
+    <div class="three-col second">
+      <div class="col-header">
+         <img src="images/stacks_icon.png"/>
+         <span>Tar Sands Refineries Put Communities at Risk</span>
+      </div>
+      <div class="learn-more-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur pulvinar elit id feugiat. Aliquam ante orci, consequat vel est nec, aliquam condimentum mauris. Aenean malesuada malesuada est, aliquam fringilla mi semper eget. Praesent facilisis enim vel turpis iaculis, at sodales magna iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales purus sollicitudin ultrices auctor. Duis luctus felis ac nisl laoreet hendrerit at eu turpis. Aliquam hendrerit ultrices dapibus.</p>
+        <p>Quisque et dolor tristique urna iaculis consequat ut et turpis. Cras in ligula risus. Etiam euismod convallis aliquet. Vestibulum convallis felis quam, id mollis urna sagittis in. Cras arcu purus, blandit et lorem vehicula, accumsan dignissim turpis. Pellentesque id consequat ipsum. Nulla eget metus elementum nulla egestas facilisis eu vitae libero. In mattis tincidunt massa quis elementum. Curabitur eget venenatis purus. In arcu elit, tincidunt a vehicula in, cursus non augue. Nunc sit amet lorem dolor.</p>
+        <p>Sed non ipsum arcu. Proin imperdiet lectus ac libero tempus scelerisque. Sed adipiscing sem eu mauris commodo laoreet. Cras placerat mi sit amet lorem sollicitudin, eget ornare velit pharetra. Integer convallis est in vestibulum iaculis. Morbi nisi mi, ornare vel auctor a, laoreet eu mi. Pellentesque auctor massa id velit volutpat faucibus.</p>
+        <p>Quisque mattis lacus magna, eget tempus nunc malesuada vel. Morbi ante nisi, congue id mi in, malesuada blandit justo. Morbi et odio neque. Morbi euismod egestas tristique. Suspendisse iaculis orci ligula, sed interdum nibh aliquet id. Cras adipiscing pellentesque nisi, eget congue sapien hendrerit quis. Phasellus tempor, odio vel luctus commodo, nulla nulla viverra lorem, nec condimentum risus nulla ut eros. Ut aliquam ante nisl, at facilisis velit eleifend at. Suspendisse porttitor laoreet elit id egestas. Cras ut lacus eu nisl sollicitudin faucibus non at urna. Praesent et ipsum volutpat, aliquet nisl sit amet, mollis nisl. Proin a neque quam. Cras non orci enim. Aliquam tellus quam, dictum nec porttitor in, rutrum eu nulla.</p>
+        <p>Morbi eget urna ut nibh tincidunt laoreet in ac elit. Sed a nunc rhoncus, lacinia erat id, mollis libero. Proin a volutpat mauris. Aenean sed nulla auctor, bibendum libero sed, molestie dolor. Morbi at rutrum lectus, non semper risus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vestibulum scelerisque commodo. Donec condimentum convallis ipsum ut lobortis. Curabitur elementum nibh ut bibendum vehicula. In consequat viverra orci, blandit lacinia purus ullamcorper sit amet. Donec blandit faucibus mi, sed facilisis dolor vulputate nec. Ut fringilla at odio varius faucibus. Proin mattis urna lectus, in tempus nulla sollicitudin ac.</p>
+        <p>Nulla vitae molestie lorem, sed pellentesque velit. Etiam sed nisi mauris. Pellentesque tincidunt lectus sed lorem lacinia pellentesque. Pellentesque elementum urna at semper tempor. Aliquam eu massa diam. Nulla facilisi. Mauris et ultrices nisl.</p>
+        <p>Curabitur luctus ligula non diam consectetur accumsan. Etiam eget sapien vel eros posuere dapibus a in massa. Pellentesque mi lorem, faucibus sit amet eros in, sagittis suscipit arcu. Curabitur imperdiet tellus consectetur dui congue, ac egestas leo condimentum. Nam ut elementum augue. Duis pulvinar tortor tristique lorem consectetur. </p>
+      </div>
+    </div>
+    <div class="three-col third">
+      <div class="col-header">
+         <img src="images/windmill_icon.png"/>
+         <span>Ten Things We Can Do Today for our Clean Energy Future</span>
+      </div>
+      <div class="learn-more-col">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur pulvinar elit id feugiat. Aliquam ante orci, consequat vel est nec, aliquam condimentum mauris. Aenean malesuada malesuada est, aliquam fringilla mi semper eget. Praesent facilisis enim vel turpis iaculis, at sodales magna iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales purus sollicitudin ultrices auctor. Duis luctus felis ac nisl laoreet hendrerit at eu turpis. Aliquam hendrerit ultrices dapibus.</p>
+        <p>Quisque et dolor tristique urna iaculis consequat ut et turpis. Cras in ligula risus. Etiam euismod convallis aliquet. Vestibulum convallis felis quam, id mollis urna sagittis in. Cras arcu purus, blandit et lorem vehicula, accumsan dignissim turpis. Pellentesque id consequat ipsum. Nulla eget metus elementum nulla egestas facilisis eu vitae libero. In mattis tincidunt massa quis elementum. Curabitur eget venenatis purus. In arcu elit, tincidunt a vehicula in, cursus non augue. Nunc sit amet lorem dolor.</p>
+        <p>Sed non ipsum arcu. Proin imperdiet lectus ac libero tempus scelerisque. Sed adipiscing sem eu mauris commodo laoreet. Cras placerat mi sit amet lorem sollicitudin, eget ornare velit pharetra. Integer convallis est in vestibulum iaculis. Morbi nisi mi, ornare vel auctor a, laoreet eu mi. Pellentesque auctor massa id velit volutpat faucibus.</p>
+        <p>Quisque mattis lacus magna, eget tempus nunc malesuada vel. Morbi ante nisi, congue id mi in, malesuada blandit justo. Morbi et odio neque. Morbi euismod egestas tristique. Suspendisse iaculis orci ligula, sed interdum nibh aliquet id. Cras adipiscing pellentesque nisi, eget congue sapien hendrerit quis. Phasellus tempor, odio vel luctus commodo, nulla nulla viverra lorem, nec condimentum risus nulla ut eros. Ut aliquam ante nisl, at facilisis velit eleifend at. Suspendisse porttitor laoreet elit id egestas. Cras ut lacus eu nisl sollicitudin faucibus non at urna. Praesent et ipsum volutpat, aliquet nisl sit amet, mollis nisl. Proin a neque quam. Cras non orci enim. Aliquam tellus quam, dictum nec porttitor in, rutrum eu nulla.</p>
+        <p>Morbi eget urna ut nibh tincidunt laoreet in ac elit. Sed a nunc rhoncus, lacinia erat id, mollis libero. Proin a volutpat mauris. Aenean sed nulla auctor, bibendum libero sed, molestie dolor. Morbi at rutrum lectus, non semper risus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vestibulum scelerisque commodo. Donec condimentum convallis ipsum ut lobortis. Curabitur elementum nibh ut bibendum vehicula. In consequat viverra orci, blandit lacinia purus ullamcorper sit amet. Donec blandit faucibus mi, sed facilisis dolor vulputate nec. Ut fringilla at odio varius faucibus. Proin mattis urna lectus, in tempus nulla sollicitudin ac.</p>
+        <p>Nulla vitae molestie lorem, sed pellentesque velit. Etiam sed nisi mauris. Pellentesque tincidunt lectus sed lorem lacinia pellentesque. Pellentesque elementum urna at semper tempor. Aliquam eu massa diam. Nulla facilisi. Mauris et ultrices nisl.</p>
+        <p>Curabitur luctus ligula non diam consectetur accumsan. Etiam eget sapien vel eros posuere dapibus a in massa. Pellentesque mi lorem, faucibus sit amet eros in, sagittis suscipit arcu. Curabitur imperdiet tellus consectetur dui congue, ac egestas leo condimentum. Nam ut elementum augue. Duis pulvinar tortor tristique lorem consectetur. </p>
+      </div>
+    </div>
+    <br style="clear: both;"/>
+    <div id="back_to_map">
+      <a href="/">
+        <img src="images/back_to_map.png"/>
+      </a>
+    </div>
+  </div>
+  <div id="action-bubbles">
+    <a href=""><img class="image-swap" src="images/bottom-action_off.png" /></a>
+    <a href=""><img class="image-swap" src="images/bottom-alerts_off.png" /></a>
+    
+  </div>
+  <div id="footer">
+    <div id="rss">Canadian Lawsuit Launch: An Exhilarating, Nerve-Wracking Day</div>
+    <div id="footer-left">
+      Media Contact: <br>
+      Ben West, Tar Sands Campaign Director<span class="seperator"> | </span>(p) 604.710.5340<br>
+      © 2013 ForestEthics<span class="seperator"> | </span><a href="">Privacy Policy</a> | <a href="">Contact Us</a><br>
+      Web Development by <a href="" id="rd">radical<strong>DESIGNS</strong></a>
+    </div>
+    <div id="footer-right">
+      <div id="share-buttons">
+        <div class="fb-like" data-href="http://radicaldesigns.org" data-width="200" data-layout="button_count" data-show-faces="false" data-send="true"></div>
+        <a href="">
+          <img src="images/twitter.png" />
+        </a>
+      </div>
+      <div id="action-buttons">
+        <a href="">donate</a>
+        <a href="" id="learn-more">learn more</a>
+      </div>    
+    </div>
+    <div class="clear"></div>
+    
+  </div> <!-- /footer -->
+</div> <!-- /container -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9469538-2']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setDomainName','forestethics.org']);
+  _gaq.push(['_setAllowLinker',true]);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

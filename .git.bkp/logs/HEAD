@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 c0f5467911333adeb27eb5d3d9cd096b1ef65851 aegir <aegir@huang.radicaldesigns.org> 1312240348 +0000	commit (initial): first commit
+c0f5467911333adeb27eb5d3d9cd096b1ef65851 402de0902c491c35ce44040fb9edc41b1aed5e49 cooper@radicaldesigns.org <drupal@huang.radicaldesigns.org> 1330744696 +0000	commit: after aegir migration
+402de0902c491c35ce44040fb9edc41b1aed5e49 8c734d0107d43c5aa90839a793d709a8b5bb6722 radicaldesigns <dev@radicaldesigns.org> 1333149402 +0000	commit: pre-major css cleanup
+8c734d0107d43c5aa90839a793d709a8b5bb6722 724d90dae4e929fe2817a61f417c45dbfb8ac03d Radical Designs <dev@radicaldesigns.org> 1380049964 -0700	commit: pre-sos merge
+724d90dae4e929fe2817a61f417c45dbfb8ac03d ed453662972c0c9155a95b2d5cb63c513d918959 Radical Designs <dev@radicaldesigns.org> 1380586558 -0700	commit: pre-sos launch commit
+ed453662972c0c9155a95b2d5cb63c513d918959 cc4d2ff0c7aaf6638862666a76b60fa66b5fcdd9 Radical Designs <dev@radicaldesigns.org> 1380740971 -0700	commit: after tssos launch
+cc4d2ff0c7aaf6638862666a76b60fa66b5fcdd9 8ffb0986be93f50437be27b52d4a3d29c3873c50 Radical Designs <dev@radicaldesigns.org> 1381866640 -0700	commit: pre-forestethics edits
+8ffb0986be93f50437be27b52d4a3d29c3873c50 969d032901685716d002c24dc4f4e2d1261ea1bd Radical Designs <dev@radicaldesigns.org> 1389296589 -0800	commit: pre-updating modules and permissions
+969d032901685716d002c24dc4f4e2d1261ea1bd cf2396998d66f67613b01390e0f0fb9290e9af31 Radical Designs <dev@radicaldesigns.org> 1389296958 -0800	commit: upgraded entity module - jcsc
+cf2396998d66f67613b01390e0f0fb9290e9af31 bd601272b93b9df4c8ddc168c5fae047a39dcd78 Radical Designs <dev@radicaldesigns.org> 1393883217 -0800	commit: pre more modules
+bd601272b93b9df4c8ddc168c5fae047a39dcd78 e0507d2cad3f0166088906d0a8b8bee1c01d09ce Radical Designs <dev@radicaldesigns.org> 1398708029 -0700	commit: new content type

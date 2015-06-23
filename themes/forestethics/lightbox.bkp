@@ -1,0 +1,92 @@
+<style type="text/css">
+#lightbox-sibling{
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#lightbox-wrapper{
+    position: absolute;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+}
+
+#lightbox-inner{
+    width: 560px;
+    height: 316px;
+    position: relative;
+    left: -280px;
+    top: -158px;
+    background: url(http://forestethicsadvocacy.org/images/harper.png) 0% 0% no-repeat;
+}
+
+#lightbox-inner #close-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 466px;
+    top: 8px;
+    width: 70px;
+    height: 17px;
+    text-indent: -9999px;
+}
+
+#lightbox-inner #give-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 375px;
+    top: 255px;
+    width: 141px;
+    height: 35px;
+    text-indent: -9999px;
+}
+
+#lightbox-inner #in-us-btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 467px;
+    top: 294px;
+    width: 48px;
+    height: 14px;
+    text-indent: -9999px;
+}
+
+</style>
+
+<?php if(geoip_country_code_by_name($_SERVER['REMOTE_ADDR']) == "US"){ echo '<!--testing!-->'; } ?>
+
+<?php if(!isset($_COOKIE['harper_lightbox']) && geoip_country_code_by_name($_SERVER['REMOTE_ADDR']) == "CA"){ ?>
+  <div id='lightbox-wrapper'>
+    <div id='lightbox-inner'>
+      <a id='close-btn' href='#'>close</a>
+      <a id='give-btn' href='http://bit.ly/HQBb30'>Give Today</a>
+      <a id='in-us-btn' href='http://bit.ly/T0RFVE'>In the United States?  Give Here!</a>
+    </div>
+  </div>
+  <div id='lightbox-sibling'>
+  </div>
+  <script type='text/javascript'>
+    function close_lightbox(){
+      jQuery('#lightbox-sibling').fadeOut(500);
+      jQuery('#lightbox-wrapper').fadeOut(500);
+      jQuery.cookie('harper_lightbox', 'closed', { expires: 2000 });
+    }
+    jQuery('#close-btn, #lightbox-sibling').click(function(){
+      close_lightbox();
+    });
+    jQuery(document).keyup(function(e){
+      if(e.keyCode == 27){
+        close_lightbox();
+      }
+    });
+  </script>
+<?php } ?>

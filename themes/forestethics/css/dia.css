@@ -1,0 +1,89 @@
+body {
+  font-family: 'gil','Gill Sans','Gill Sans MT',sans-serif !important;
+}
+
+
+.dia-title {
+  color: #003366;
+  font-family: 'gil','Gill Sans','Gill Sans MT',sans-serif;
+  font-variant: small-caps;
+  font-weight:150;
+  font-size: 25px;
+  text-transform: uppercase;
+
+}
+
+.dia-left-bar {
+width:340px;
+float:left;
+}
+.dia-main {
+float:left;
+}
+
+.dia-subtitle {
+  color: #aebbcf;
+  font-size:20px;
+  font-family: 'gil','Gill Sans','Gill Sans MT',sans-serif;
+}
+
+.dia-grey {
+border:19px solid #ccc;
+
+}
+
+
+.salsa fieldset {
+border:none;
+}
+
+fieldset legend {
+  color: #003366;
+  text-transform:uppercase ;
+  font-size:20px;
+  font-family: 'gil','Gill Sans','Gill Sans MT',sans-serif;
+}
+
+#salsa form {
+width:600px;
+}
+
+form input {
+border:1px solid #ccc;
+}
+
+form label {
+display:inline;
+line-height: 2;
+font-weight:normal;
+}
+
+form .supporterInfo, #recurrence, #credit_card_information  legend+.formRow {
+border-top: 3px solid #c2d85f;
+}
+
+#credit_card_information  legend+.formRow  {
+padding-top:5px;
+
+}
+
+#submit {
+float:right;
+}
+
+.big-link {
+font-size:20px;
+clear:both;
+}
+
+.dia-main .error {
+display:none;
+}
+
+#submitContribution {
+background:url(http://forestethics.huang.radicaldesigns.org/sites/forestethics.huang.radicaldesigns.org/themes/forestethics/images/support.png);
+width:340px;
+height:49px;
+text-indent: 9000px;
+border:none;
+}

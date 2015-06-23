@@ -1,0 +1,19 @@
+
+/**
+ *  @file
+ *  Overlay for Issuu thumbnails in the media library browser.
+ */
+#media-browser .styles-container-media_issuu {
+  position: relative; /* Relative wrapper for the overlay. */
+}
+#media-browser .styles-container-media_issuu span {
+  background: url(images/stream_issuu.png) no-repeat; /* Here's the overlay image. */
+  height: 22px; /* Position of the overlay */
+  left: 33px;
+  position: absolute;/* Absolute positioning in the relative wrapper creates the overlay. */
+  top: 80px;
+  width: 69px;  /* Size of the overlay */
+}
+#media-browser .styles-container-media_issuu span:hover {
+  background-position: 0px -22px;
+}

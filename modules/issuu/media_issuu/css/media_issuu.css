@@ -1,0 +1,21 @@
+
+.media-issuu-preview-wrapper {
+  max-width: 100%;
+  min-height: 50px;
+  position: relative;
+}
+
+.media-issuu-preview-wrapper object,
+.media-issuu-preview-wrapper iframe {
+  max-width: 100%;
+  position: relative;
+}
+
+.media-issuu-preview-wrapper .js-fallback {
+  left: 0;
+  margin-top: -0.5em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+}

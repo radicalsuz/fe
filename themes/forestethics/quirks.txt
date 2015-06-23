@@ -1,0 +1,16 @@
+#Mini Documentation For FE Module & Theme
+
+##FE MODULE
+hook_node_view() checks to see if we're looking directly at the page view of a campaign button, action or document type by reading the URL arg. If so, we're forwarded to campaign, action url or document file directly. This means you can't 'look' at these content types directly, they have to appear in a view on another page
+
+hook_preprocess_html() pulls a few fields off of the node we're loading and sticks them in $GLOBALS. This makes them available in html.tpl.php so we can put them into the opengraph metatags in the <head>.
+
+##FE THEME
+the majority of sidebars items in the theme are manually assigned style at the block level using the block class module. e.g. 'darkblue-context' on the campaign landing page sidebars.
+
+the media archive content type is hidden from anonymous users using the content access module.
+
+Media embed lightboxes use custom lightbox.js. it targets elements with class 'rd-lightbox' using their ID as the particular embed's content id. it picks it's embed template based on the element's 'type' attribute. For example <div class="rd-lightbox" id="abc123" type="video"></div> will fire up a youtube embed featuring video id abc123.
+
+tabs on media / multimedia room pages are initialized by forestethics.js
+

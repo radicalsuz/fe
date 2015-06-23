@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Media: Issuu module.
+ */
+
+/**
+ * A registry of variable_get defaults.
+ */
+include_once dirname(__FILE__) . '/includes/media_issuu.variables.inc';
+
+/**
+ * Implements hook_uninstall().
+ */
+function media_issuu_uninstall() {
+  foreach (media_issuu_variable_default() as $variable => $value) {
+    media_issuu_variable_del($variable);
+  }
+  return array(array('success' => TRUE, 'query' => "Deleted all variables in the Media: Issuu namespace."));
+}

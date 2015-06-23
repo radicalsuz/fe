@@ -1,0 +1,101 @@
+<?php
+/**
+ * @file
+ * media_issuu/media_issuu.module
+ *
+ * Media: Issuu.com provides a stream wrapper and formatters of issuu embed
+ * content provided by Issuu, available at http://issuu.com/.
+ */
+
+
+/**
+ * A registry of variable_get defaults.
+ */
+include_once dirname(__FILE__) . '/includes/media_issuu.variables.inc';
+
+/**
+ * Hooks and callbacks for integrating with Styles module for display.
+ * @todo Can save a little overhead for people without Styles module by wrapping
+ * this inside a module_exists('styles'). However, is that safe to do in
+ * global context? If not, is there any down side to doing it in hook_init()?
+ */
+include_once dirname(__FILE__) . '/includes/media_issuu.styles.inc';
+
+/**
+ * Hooks and callbacks for integrating with File Entity module for display.
+ */
+include_once dirname(__FILE__) . '/includes/media_issuu.formatters.inc';
+
+/**
+ * Implements hook_stream_wrappers().
+ */
+function media_issuu_stream_wrappers() {
+  return array(
+    'issuu' => array(
+      'name' => t('Issuu documents'),
+      'class' => 'MediaIssuuStreamWrapper',
+      'description' => t('Documents provided by Issuu.'),
+      'type' => STREAM_WRAPPERS_READ_VISIBLE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_media_internet_providers().
+ */
+function media_issuu_media_internet_providers() {
+  $path = drupal_get_path('module', 'media_issuu');
+  return array(
+    'MediaInternetIssuuHandler' => array(
+      'title' => 'issuu',
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function media_issuu_theme($existing, $type, $theme, $path) {
+  return array(
+    'media_issuu_document' => array(
+      'variables' => array('uri' => NULL, 'width' => NULL, 'height' => NULL),
+      'file' => 'media_issuu.theme.inc',
+      'path' => $path . '/includes/themes',
+      'template' => 'media-issuu-document',
+    ),
+  );
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function media_issuu_ctools_plugin_api($owner, $api) {
+  static $api_versions = array(
+    'file_entity' => array(
+      'file_default_displays' => 1,
+    ),
+  );
+  if (isset($api_versions[$owner][$api])) {
+    return array('version' => $api_versions[$owner][$api]);
+  }
+}
+
+/**
+ * Implements hook_media_parse().
+ *
+ * @todo This hook should be deprecated. Refactor Media module to not call it
+ *   any more, since media_internet should be able to automatically route to the
+ *   appropriate handler.
+ */
+function media_issuu_media_parse($embed_code) {
+  $handler = new MediaInternetIssuuHandler($embed_code);
+  return $handler->parse($embed_code);
+}
+
+/**
+ * Implements hook_media_format_form_prepare_alter().
+ */
+function media_issuu_media_format_form_prepare_alter(&$form, &$form_state, $media) {
+  $settings = array('autosubmit' => ($media->type === "other"));
+  drupal_add_js(array('media_format_form' => $settings), 'setting');
+}

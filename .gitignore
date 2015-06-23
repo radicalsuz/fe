@@ -1,0 +1,4 @@
+files/*
+private/*
+*.sql
+settings*.php

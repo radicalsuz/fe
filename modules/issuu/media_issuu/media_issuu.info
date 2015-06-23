@@ -1,0 +1,15 @@
+name = Media: Issuu.com
+description = Provides Issuu.com support to the Media module.
+package = "Media"
+core = 7.x
+files[] = includes/MediaIssuuStreamWrapper.inc
+files[] = includes/MediaInternetIssuuHandler.inc
+files[] = includes/MediaIssuuStyles.inc
+dependencies[] = media_internet
+
+; Information added by drupal.org packaging script on 2013-09-30
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "issuu"
+datestamp = "1380583634"
+

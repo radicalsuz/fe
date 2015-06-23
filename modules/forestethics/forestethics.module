@@ -1,0 +1,56 @@
+<?php
+//Hook for whenever ANY node is viewed
+//We check to see if arg(1) is the same as the node->nid being processed
+//this means we're on the full page view of the node
+function forestethics_node_view($node, $view_mode, $langcode) {
+  global $user;
+  if ($user->uid) {
+      $logged_in = TRUE;
+  }   
+  
+  if($node->type == 'campaign_button' && arg(1) == $node->nid) {
+    $camp_nid = $node->field_campaign_link['und'][0]['node']->nid;
+    if($camp_nid) {
+      //campaign buttons have related campaigns, redirect us there
+      drupal_goto('http://forestethics.huang.radicaldesigns.org/node/'.$camp_nid);
+    }           
+  } else if($node->type == 'action' && arg(1) == $node->nid && $logged_in == FALSE) {
+    $action_url = $node->field_redirect_url['und'][0]['value'].'&ea.tracking.id=website';
+    if($action_url) {
+      //actions have external URLS, redirect us there
+#      drupal_goto($action_url);
+    }                                                                                                                                                                      
+  } else if($node->type == 'document' && arg(1) == $node->nid) {
+    $file_url = $node->field_file['und'][0]['filename'];
+    if($file_url) {
+      //docments have upload url, redirect us there
+      drupal_goto('/sites/forestethics.huang.radicaldesigns.org/files/'.$file_url);
+    }                                                                                                                                                                      
+  }      
+}
+
+//pass down our $node vars so they are available in HTML.TPL.PHP
+/*
+function forestethics_preprocess_html(&$variables) {
+  //If on an individual node page, add the node type to body classes.
+  if ($node = menu_get_object()) {
+    if($node->type == 'issue_landing_page' || $node->type == 'campaign_landing_page' || $node->type== 'landing_page'){
+        $GLOBALS['header_image'] = 'http://'.$_SERVER['HTTP_HOST'].'/sites/forestethics.org/files/'.substr($node->field_feature_image['und'][0]['uri'],9);
+    }
+    
+    
+    if(isset($node->body['und'])){ //check if there's a body on this node
+      if(strlen($node->body['und'][0]['value'])>10) {//check it's got at least ten chars of text
+        $GLOBALS['body_sample'] = substr(strip_tags($node->body['und'][0]['value']),0,200);
+      }
+    }
+    if(isset($node->title)){ //check if there's a title on this node
+        $GLOBALS['title'] = $node->title;
+    }
+  }
+   if ($node = menu_get_object()) {
+        $variables['field_meta'] = $node->field_meta['und'][0]['value']; // find your cck field here                   
+    }   
+   
+}
+*/

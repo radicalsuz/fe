@@ -1,0 +1,517 @@
+html{background: #40342A;}
+
+body{
+text-align: center;
+margin:0;
+padding: 0;
+font-size: 14px;
+font-family:"Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+background: #ffffff;
+}
+
+#container{
+text-align: center;
+position: relative;
+background: url('http://forestethics.org/custom/postcard/images/fish-bg.jpg') top center fixed no-repeat;
+}
+
+#header,#content,#footer{}
+
+.clear{
+height:1px;
+clear:both;
+}
+
+a{color:#FF0D00;text-decoration: none;font-weight: bold;}
+
+a img{
+border: none;
+}
+
+h1, h2, .title, .thanks-title{
+font-family: 'Cooper', sans-serif;
+font-weight: normal;
+font-stretch: expanded;
+}
+
+h1{font-size: 30px; margin: 10px 0 0px;line-height: 1em;}
+
+h2, .title{font-size: 25px; margin: 10px 0 15px; line-height: 1em;}
+
+
+@font-face {  
+    font-family: 'Cooper';
+    src: url('../fonts/eurostile-black-dtc-webfont.eot');
+    src: url('../fonts/eurostile-black-dtc-webfont.eot?iefix') format('eot'),
+         url('../fonts/eurostile-black-dtc-webfont.woff') format('woff'),
+         url('../fonts/eurostile-black-dtc-webfont.ttf') format('truetype'),
+         url('../fonts/eurostile-black-dtc-webfont.svg#webfont00W9gyFn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}  
+
+.cooper{
+font-family: 'Cooper', sans-serif;
+font-weight: normal;
+}
+
+@font-face {  
+    font-family: 'Fatboy';
+    src: url('../fonts/hands_up-webfont.eot');
+    src: url('../fonts/hands_up-webfont.eot?iefix') format('eot'),
+         url('../fonts/hands_up-webfont.woff') format('woff'),
+         url('../fonts/hands_up-webfont.ttf') format('truetype'),
+         url('../fonts/hands_up-webfont.svg#webfont00W9gyFn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+.fatboy{
+font-family: 'Fatboy', sans-serif;
+line-height: 1.3em;
+}
+
+#header{
+    background: url("http://forestethics.org/custom/postcard/images/header_01.png") no-repeat transparent 0px 6px scroll;
+    height: 95px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    width: 840px;
+    }
+
+#intro {text-align: center;}
+#intro h1{margin: 0 0 5px;}
+#intro p{margin: 0 0 5px;}
+
+#header #logo{
+display: block;
+float: left;
+height: 65px;
+width: 600px;
+}
+
+#header .links{text-align: right;}
+
+#header .links a{color: #000;}
+
+#header .links a:hover{color: #FF0D00;}
+
+#content{
+display: none;
+margin: 0 auto;
+width: 860px;
+position: relative;
+text-align: left;
+background-color: #fff;
+   -moz-border-radius: 12px; /* FF1+ */
+-webkit-border-radius: 12px; /* Saf3-4, iOS 1+, Android 1.5+ */
+        border-radius: 12px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+
+     -moz-box-shadow: 0px 0px 4px #000; /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 4px #000; /* Saf3.0+, Chrome */
+          box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, Chrome 10+ */
+border: 1px solid #000;
+opacity:.82;
+filter:alpha(opacity=82);
+}
+
+#content-padder{
+min-height: 463px;
+padding: 15px 40px;
+/*
+opacity:1;
+filter:alpha(opacity=100);
+*/
+}
+
+/* for Internet Explorer */
+/*\*/
+* html #content-padder {
+height: 463px;
+}
+/**/
+
+.left{
+//height: 139px;
+width: 260px;
+float: left;
+margin-left: ;
+}
+
+.left p{margin-top:0;}
+
+.right{
+width: 500px;
+float: left;
+}
+
+
+#cards{text-align: center;}
+
+.card{
+margin: 20px auto;
+border: 1px solid #000;
+display: block;
+cursor: pointer;
+}
+
+
+
+#card-select{height: 334px;}
+
+#card-select-img{
+}
+
+/*
+.card:hover, .hover-card{
+   -moz-box-shadow: 0px 0px 20px #FF7800; 
+-webkit-box-shadow: 0px 0px 20px #FF7800; 
+        box-shadow: 0px 0px 20px #FF7800;
+}
+*/
+.selected-card{
+   -moz-box-shadow: 0px 0px 30px #F9C70E; 
+-webkit-box-shadow: 0px 0px 30px #F9C70E; 
+        box-shadow: 0px 0px 30px #F9C70E;
+border: 1px solid #F9C70E;
+}
+
+/* for Internet Explorer */
+/*\*/
+* html .selected-card {
+border: 3px solid #F9C70E;
+}
+/**/
+
+
+.drop-shadow{
+   -moz-box-shadow: -5px 5px 5px #000; 
+-webkit-box-shadow: 5px 5px 5px #000; 
+        box-shadow: 5px 5px 5px #000;
+margin: 5px auto 70px;
+width: 464px;
+border:1px solid #000;
+overflow: hidden;
+}
+
+#footer{
+background-color: #000;
+color: #fff;
+padding:10px;
+text-align: center;
+margin: 50px auto;
+font-size: 12px;
+width: 300px;
+background: #000000;
+opacity:.62;
+filter:alpha(opacity=62);
+}
+
+#footer a{color:#fff;}
+
+.button{
+  color:#fff;
+//   -moz-border-radius: 5px; /* FF1+ */
+//-webkit-border-radius: 5px; /* Saf3-4, iOS 1+, Android 1.5+ */
+//        border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+background-color: #FF0D00;
+background-image: -moz-linear-gradient(top, #FF0D00, #6d0019); /* FF3.6 */
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #FF0D00),color-stop(1, #6d0019)); /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(#FF0D00, #6d0019); /* Chrome 10+, Saf6 */
+background-image: linear-gradient(top, #FF0D00, #FF0D00);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF0D00', EndColorStr='#6d0019'); /* IE6ÐIE9 */
+border: none;
+font-size: 16px;
+color:#fff;
+padding: 5px 10px;
+cursor: pointer;
+bottom: 18px;
+text-align: center;
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.active-button{
+display: none;
+}
+
+#submit-button{
+position: absolute;
+right: 105px;
+width: 150px;
+}
+
+.step-button{
+position: absolute;
+left: 345px;
+width: 150px;
+}
+
+#step1-button{
+}
+
+#step2-button{
+}
+
+
+#sides{text-align: center;}
+
+#sides span{cursor: pointer;}
+
+.active{font-weight: bold;}
+
+#back{display: none;background: ;}
+
+#form-box{
+height: 334px;
+position: relative;
+background: url('http://forestethics.org/custom/postcard/images/back.gif') no-repeat;
+width:464px;
+}
+
+#form-box-padder{}
+
+form{margin: 0;padding: 0;}
+
+p.small{margin: 0 5px;font-size:12px;text-align: center;}
+
+div.small{font-size:9px;}
+
+.form-half{position: absolute;font-size: 12px;}
+
+#form-left{
+width:194px;
+float:left;
+left:16px;
+bottom: 50px;
+}
+
+#form-right{
+width: 230px;
+right:10px;
+bottom: 12px;
+}
+
+#card-count{
+font-weight: bold;
+position: absolute;
+right: 50px;
+text-align: center;
+bottom: 60px;
+z-index: 6;
+display: block;
+width: 345px;
+}
+
+#card-count span, #card-count-thx span{color: #FF0D00;} 
+#card-count-thx{
+font-weight: bold;
+position: absolute;
+right: 65px;
+text-align: center;
+bottom: 50px;
+z-index: 7;
+display: block;
+width: 345px;
+}
+
+
+#selected-img-preview-wrapper{
+margin: 10px auto;
+text-align: center;
+}
+
+#selected-img-preview{
+border:1px solid #000;
+}
+
+#fe-link {
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    font-variant: small-caps;
+    font-weight: bold;
+    line-height: 1.1;
+    text-decoration: none;
+}
+
+#fe-link span {
+    font-size: 15px;
+}
+
+/* Thank you page */
+
+#thanks-left{width: 350px; float:left;margin: 10px 0 0 30px;}
+
+#thanks-right{
+    float: left;
+    margin: 10px 0 0 115px;
+    width: 200px;
+}
+
+.thanks-box{
+position: relative;
+margin-top: 20px;
+}
+
+.thanks-box p{margin: 0 0 10px 0;}
+
+
+div.thanks-title{
+position: absolute;
+top:0px;
+left:-30px;
+margin: 0;
+padding: 0;
+font-size: 35px;
+vertical-align: top;
+}
+
+.goal-button{width: 50px;float:left;margin: 0 19px;}
+.goal-button a { color: #FFFFFF; }
+#share-links {
+    margin-top: 20px;
+    text-align: center;
+}
+#share-links-padder {
+}
+#share-links a {
+    border: none;
+    color: #000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 0 23px;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 13px;
+}
+#share-links a img {
+    margin-bottom: 5px;
+    width: 60px;
+}
+
+#therm-wrapper{
+width: 200px;
+position: relative;
+height: 330px;
+right: 0px;
+bottom:0px;
+}
+
+#therm{
+background: #FF0D00;
+width:20px;
+border-width: 0 2px;
+border-color: black;
+border-style: solid;
+z-index: 4;
+position: absolute;
+bottom:37px;
+left: 10px;
+}
+
+#therm-empty{
+background: white;
+width:20px;
+border-width: 0 2px;
+border-color: black;
+border-style: solid;
+z-index: 3;
+position: absolute;
+bottom:40px;
+left: 10px;
+height: 210px;
+     -moz-box-shadow: 0px 0px 4px #000; /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 4px #000; /* Saf3.0+, Chrome */
+          box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, Chrome 10+ */
+
+}
+
+
+#therm-btm{
+border-width: 0 2px 2px 2px;
+border-color: black;
+border-style: solid;
+background: #FF0D00;
+width: 40px;
+height:40px;
+margin: 0 auto;
+position: absolute;
+bottom:1px;
+z-index: 5;
+     -moz-box-shadow: 0px 0px 4px #000; /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 4px #000; /* Saf3.0+, Chrome */
+          box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, Chrome 10+ */
+
+
+     -moz-border-radius: 200px; 
+  -webkit-border-radius: 200px; 
+          border-radius: 200px; 
+          
+          
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+
+
+}
+
+#therm-counts{
+position: absolute;
+top:100px;
+right: 27px;
+z-index: 3;
+font-size: 13px;
+}
+
+.therm-count{
+margin-bottom: 10px;
+text-align: left;
+}
+
+#shadow-wrapper{display: none;}
+
+#shadow, #shadow-box-wrapper{position: absolute;}
+
+#shadow{
+width:100%;
+height:1000px;
+overflow: hidden;
+background-color: #000000;
+background-color: rgba(0, 0, 0, 0.7);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000',EndColorStr='#000000'); /* IE6–IE9 */
+z-index: 8;
+}
+
+#shadow-box-wrapper{
+width:100%;
+text-align: center;
+z-index: 9;
+}
+
+#shadow-box{
+width: 1000px;
+margin:0px auto;
+padding:  0 0;
+background: #000;
+}
+
+#shadow-box img{}
+
+#shadow-skip{
+text-align: right;
+cursor: pointer;
+color: #fff;
+padding: 5px 10px;
+}
+.links iframe {
+width: 100px !important;
+}
+
+
+.blurb{
+font-size: .8em;
+margin-top: 5px;
+}
+
+.bodygreystrong{font-style: italic;}
